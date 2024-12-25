@@ -3,7 +3,7 @@ import type { InvestmentInput } from './investment-input.model';
 
 @Injectable({ providedIn: 'root' })
 export class InvestmentService {
-    resultsData?: {
+    resultData?: {
         year: number,
         interest: number,
         valueEndOfYear: number,
@@ -32,6 +32,6 @@ export class InvestmentService {
             });
         }
 
-        this.resultsData = annualData;
+        this.resultData = annualData;
     }
 }

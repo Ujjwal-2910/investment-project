@@ -13,6 +13,6 @@ export class InvestmentResultsComponent {
   private investmentService = inject(InvestmentService);
   
   get results() {
-    return this.investmentService.resultsData;
+    return this.investmentService.resultData;
   }
 }
